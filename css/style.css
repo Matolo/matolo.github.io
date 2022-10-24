@@ -4,6 +4,10 @@
 	flex-wrap: wrap;
 	background-color: green;
 }
+#flexSection > h3, #flexSection > h2
+{
+	flex-basis: 100%;
+}
 #flexUl
 {
 	list-style-type: none;
@@ -11,12 +15,22 @@
 	background-color: blue;	
 	
 }
+#flexAside
+{
+	flex-wrap: fixed;
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+.flexArticles
+{
+	flex-basis: 80%;
+}
 nav > ul > li
 {
 	padding: 0 1em 0 1em;
 	
 }
-nav > ul > li a:link, a:visited, a:active 
+nav > ul > li a:link, nav > ul > li a:visited, nav > ul > li a:active 
 {
 	color: white;
 	text-decoration: none;
