@@ -4,6 +4,10 @@
 	flex-wrap: wrap;
 	background-color: green;
 }
+#flexProducts
+{
+	flex-basis: 80%;
+}
 #flexSection > h3, #flexSection > h2
 {
 	flex-basis: 100%;
@@ -26,6 +30,11 @@
 {
 	flex-basis: 80%;
 }
+.articleFooters
+{
+	text-align: left;
+	background-color: transparent;
+}
 nav > ul > li
 {
 	padding: 0 1em 0 1em;
@@ -44,5 +53,11 @@ h1
 h2
 {
 	background-color: grey;
+	color: white;
+}
+footer
+{
+	text-align: center;
+	background-color: blue;
 	color: white;
 }
