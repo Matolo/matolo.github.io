@@ -1,21 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-body
+nav
 {
-	background-color: yellow;
-	font-family: 'Roboto', sans-serif;
+	
 }
-h1
+nav > ul
 {
-	color: red;
+    list-style-type: none;
+    padding: 1em;
 }
-h2
-{
-	color: blue;
-}
-p
-{
-	color: grey;
-	font: Roboto;
-}
-
