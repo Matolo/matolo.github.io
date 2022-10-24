@@ -1,0 +1,33 @@
+#flexSection
+{
+	display:flex;
+	flex-wrap: wrap;
+	background-color: green;
+}
+#flexUl
+{
+	list-style-type: none;
+	display: flex;
+	background-color: blue;	
+	
+}
+nav > ul > li
+{
+	padding: 0 1em 0 1em;
+	
+}
+nav > ul > li a:link, a:visited, a:active 
+{
+	color: white;
+	text-decoration: none;
+}
+h1
+{
+	background-color: black;
+	color: white;
+}
+h2
+{
+	background-color: grey;
+	color: white;
+}
