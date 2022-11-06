@@ -1,6 +1,6 @@
 #flexSection
 {
-	display:flex;
+	display: flex;
 	flex-wrap: wrap;
 	background-color: green;
 }
@@ -8,7 +8,8 @@
 {
 	flex-basis: 80%;
 	background-color: rgba(255, 255, 0, 0.75);
-	
+	display: flex;
+	flex-wrap: wrap;
 }
 #flexSection > h3, #flexSection > h2
 {
@@ -28,10 +29,40 @@
 	flex-grow: 0;
 	
 }
-.flexArticles
+#flexArticle1
 {
+	order: 1;
+	flex-basis: 100%
+}
+#flexArticle2
+{
+	order: 2;
+	flex-basis: 100%;
+}
+#flexArticle3
+{
+	order: 3;
+	flex-basis: 100%;
+}
+#footerCopy
+{
+	text-align: center;
+	background-color: blue;
+	color: white;
 	flex-basis: 80%;
 }
+#footerCookies
+{
+	position: fixed;
+	color: #fff;
+	background-color: #fa0;
+	opacity: 0.5;
+	z-index: 9999;
+	right: 0px;
+	bottom: 0px;
+	
+}
+
 .articleFooters
 {
 	text-align: left;
@@ -55,11 +86,5 @@ h1
 h2
 {
 	background-color: grey;
-	color: white;
-}
-footer
-{
-	text-align: center;
-	background-color: blue;
 	color: white;
 }

@@ -26,9 +26,20 @@
 		</nav>
 		<!--TODO ADD PICTURES, COPYRIGHT, TEXT-->
 		<section id="flexSection">
+			<video id="videoPc" no-controls autoplay muted>
+				<source src="videos/zajimaveVideoPc.mp4" type="video/mp4">
+				<source src="videos/zajimaveVideoPc.ogg" type="video/ogg">
+				This browser doesn't support video!
+			</video>
+			<video id="videoTablet" no-controls autoplay muted>
+				<source src="videos/zajimaveVideoTablet.mp4" type="video/mp4">
+				<source src="videos/zajimaveVideoTablet.ogg" type="video/ogg">
+				This browser doesn't support video!
+			</video>
+		
 			<section id="flexProducts">
 				<h3>Technologies</h3>
-				<article class="flexArticles">
+				<article id="flexArticle1">
 					<header class="articleHeaders">
 						<h4>Dual axis steeri	ng</h4>
 					</header>
@@ -44,7 +55,7 @@
 						<a href="">More info...</a>
 					</footer>
 				</article>
-				<article class="flexArticles">
+				<article id="flexArticle2">
 					<header class="articleHeaders">
 						<h4>Some technology idk yet</h4>
 					</header>
@@ -56,7 +67,7 @@
 						<a href="">More info...</a>
 					</footer>
 				</article>
-				<article class="flexArticles">
+				<article id="flexArticle3">
 					<header class="articleHeaders">
 						<h4>Another technology here</h4>
 					</header>
@@ -80,8 +91,11 @@
 					</ol>
 			</aside>
 		</section>
-		<footer>
+		<footer id="footerCopy">
 			&copy;Martin Novak
 		</footer>
+		<footer id="footerCookies">
+			Cookie statement
+		</footer>	
 	</body>
 </html>
