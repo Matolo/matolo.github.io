@@ -1,0 +1,5 @@
+Student name: Martin Novak
+Student number: 698295
+Student class: IT1B
+URL Student website: https://matolo.github.io/
+URL Student repository: https://github.com/Matolo/matolo.github.io

@@ -79,10 +79,10 @@
 	color: #fff;
 	background-color: #fa0;
 	opacity: 0.5;
-	z-index: 9999;
 	right: 0px;
 	bottom: 0px;
 	margin: 0 1em 0 0;
+	z-index: 9999;
 }
 
 .articleHeaders
@@ -125,4 +125,32 @@ h2
 {
 	background-color: grey;
 	color: white;
+}
+
+/*
+	Mobile
+*/
+@media screen and (max-width: 480px)
+{
+	#videoPc
+	{
+		display: none;
+	}
+	.articleParagraphs
+	{
+		flex-basis:100%;
+	}
+	.flexImg
+	{
+		margin: 0 50% 0 50%;
+	}
+
+}
+/*
+	Tablet
+*/
+@media screen and (min-width: 481px and max-width: 1279px)
+{
+	
+	
 }
