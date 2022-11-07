@@ -1,13 +1,3 @@
-#videoTablet
-{
-	display: none;
-}
-#videoPc
-{
-	max-width: 35%;
-	max-height: 35%;
-	margin: 1em 1em 1em 1em;
-}
 #flexSection
 {
 	display: flex;
@@ -36,7 +26,6 @@
 }
 #flexAside
 {
-	flex-wrap: fixed;
 	flex-shrink: 0;
 	flex-grow: 0;
 }
@@ -82,6 +71,7 @@
 	right: 0px;
 	bottom: 0px;
 	margin: 0 1em 0 0;
+	padding: 1em 1em 1em 1em;
 	z-index: 9999;
 }
 
@@ -149,8 +139,56 @@ h2
 /*
 	Tablet
 */
-@media screen and (min-width: 481px and max-width: 1279px)
+@media screen and ((min-width: 481px) and (max-width: 1279px))
 {
-	
-	
+	#videoPc
+	{
+		display:none;
+	}
+	#flexArticle1 
+	{
+		order: 3;
+	}
+	#flexArticle3
+	{
+		order: 1;
+	}
+	.flexImg 
+	{
+		order: 1;
+	}
+	.articleParagraphs
+	{
+		order: 2;
+	}
+	#flexProducts
+	{
+		order: 3;
+		flex-basis: 100%;
+	}
+	#videoTablet
+	{
+		order: 2;
+		margin: 0 1em 0 1em;
+		width: 35%;
+		height: 35%;
+	}
+	#flexAside
+	{
+		order:1;
+		flex-basis: 100%;
+	}
+}
+@media screen and (min-width: 1280px)
+{
+	#videoTablet
+	{
+		display: none;
+	}
+	#videoPc
+	{
+		max-width: 35%;
+		max-height: 35%;
+		margin: 1em 1em 1em 1em;
+	}
 }
