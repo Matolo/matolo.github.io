@@ -21,7 +21,6 @@
 }
 #flexAside
 {
-	margin: 1em;
 	flex-shrink: 0;
 	flex-grow: 0;
 }
@@ -104,6 +103,10 @@ h2
 	background-color: grey;
 	color: white;
 }
+aside ol, aside h3
+{
+	margin: 1em;
+}
 /*
 	Mobile
 */
@@ -173,7 +176,7 @@ h2
 	#videoTablet
 	{
 		order: 2;
-		margin: 1em 1em 1em 1em;
+		padding: 1em 1em 1em 1em;
 		max-width: 35%;
 		max-height: 35%;
 	}
