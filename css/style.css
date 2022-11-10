@@ -135,7 +135,7 @@ aside ol, aside h3
 {
 	display: grid;
 	list-style: none;
-	grid-template-columns: 100px 100px 100px;
+	grid-template-columns: 5% 5% 5%;
 }
 #gridBox
 {
