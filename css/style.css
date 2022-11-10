@@ -3,6 +3,54 @@
 	width: 5%;
 	height: 5%;
 }
+#footerCopy
+{
+	text-align: center;
+	background-color: blue;
+	color: white;
+}
+#cookies
+{
+	position: fixed;
+	color: #fff;
+	background-color: #fa0;
+	opacity: 0.5;
+	right: 0px;
+	bottom: 0px;
+	margin: 0 1em 0 0;
+	padding: 1em 1em 1em 1em;
+	z-index: 9999;
+}
+body
+{
+	margin: 0px;
+}
+ul li
+{
+	padding: 0 1em 0 1em;
+}
+li a:link, li a:visited, li a:active 
+{
+	color: white;
+	text-decoration: none;
+}
+h1
+{
+	background-color: black;
+	color: white;
+}
+h2
+{
+	background-color: grey;
+	color: white;
+}
+aside ol, aside h3
+{
+	margin: 1em;
+}
+/*
+	Flex 
+*/
 #flexSection
 {
 	display: flex;
@@ -35,6 +83,7 @@
 	flex-basis: 100%;
 	flex-wrap: wrap;
 	flex-direction: row;
+	align-items: center;
 }
 #flexArticle1
 {
@@ -51,24 +100,7 @@
 	order: 3;
 	background-color: red;
 }
-#footerCopy
-{
-	text-align: center;
-	background-color: blue;
-	color: white;
-}
-#footerCookies
-{
-	position: fixed;
-	color: #fff;
-	background-color: #fa0;
-	opacity: 0.5;
-	right: 0px;
-	bottom: 0px;
-	margin: 0 1em 0 0;
-	padding: 1em 1em 1em 1em;
-	z-index: 9999;
-}
+
 .articleHeaders
 {
 	flex-basis:100%;	
@@ -92,32 +124,85 @@
 	text-align: left;
 	flex-basis: 100%;
 }
-body
+/*
+	Grid
+*/
+#gridNav
 {
-	margin: 0px;
+	background-color:blue;
 }
-ul li
+#gridUl
 {
-	padding: 0 1em 0 1em;
+	display: grid;
+	list-style: none;
+	grid-auto-flow: column;
+
 }
-li a:link, li a:visited, li a:active 
+#gridBox
 {
-	color: white;
-	text-decoration: none;
+	display: grid;
+	grid-template-areas:
+		'article2 article1 article3'
+		'article2 article1 article3'
+		'article2 article1 article3'
+		'article2 article1 article4'
+		'article5 article1 article4'
+		'article5 article1 article4'
+		'article5 article6 article6'
+		'aside aside aside';
+	
 }
-h1
+#gridArticle1
 {
-	background-color: black;
-	color: white;
-}
-h2
-{
+	grid-area: article1;
 	background-color: grey;
-	color: white;
 }
-aside ol, aside h3
+#gridArticle2
 {
-	margin: 1em;
+	grid-area: article2;
+	background-color: yellow;
+}
+#gridArticle3
+{
+	grid-area: article3;
+	background-color: red;
+}
+#gridArticle4
+{
+	grid-area: article4;
+	background-color: blue;
+}
+#gridArticle5
+{
+	grid-area: article5;
+	background-color: brown;
+}
+#gridArticle6
+{
+	grid-area: article6;
+	background-color: orange;
+}
+#gridAside
+{
+	grid-area: aside;
+	display: grid;
+}
+#gridImg1, #gridImg2, #gridImg3
+{
+	max-width: 35%;
+	max-height: 35%;
+}
+#gridImg1
+{
+	grid-column: 1;
+}
+#gridImg2
+{
+	grid-column: 2;
+}
+#gridImg3
+{
+	grid-column: 3;
 }
 /*
 	Mobile
@@ -131,10 +216,12 @@ aside ol, aside h3
 	.articleParagraphs
 	{
 		flex-basis:100%;
+		order: 1;
 	}
 	.flexImg
 	{
 		margin: auto;
+		order:2;
 	}
 	#flexArticle1
 	{
