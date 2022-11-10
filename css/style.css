@@ -140,6 +140,7 @@ aside ol, aside h3
 #gridBox
 {
 	display: grid;
+	grid-template-columns: 45% 35% 20%;
 	grid-template-areas:
 		'article2 article1 article3'
 		'article2 article1 article3'
@@ -185,10 +186,11 @@ aside ol, aside h3
 {
 	grid-area: aside;
 	display: grid;
+	grid-template-columns: 45% 35% 20%;
 }
 #gridImg1, #gridImg2, #gridImg3
 {
-	max-width: 35%;
+	max-width: 50%;
 	max-height: 35%;
 }
 #gridImg1
